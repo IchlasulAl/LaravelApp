@@ -1,6 +1,6 @@
 @extends('template/main')
 
-@section('judul','Rekayawa Web')
+@section('judul','Rekayasa Web')
 
 @section('container')
 <div class="container">
