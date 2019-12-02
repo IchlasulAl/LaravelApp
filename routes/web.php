@@ -15,8 +15,12 @@
 //     return view('about');
 // });
 
+Route::get('/home', 'PagesController@home');
 Route::get('/', 'PagesController@home');
-Route::get('/', 'PagesController@about');
+Route::get('/about', function () {
+    $nama = 'Ichlasul Al';
+    return view('about', ['nama' => $nama]);
+});
 
 Route::get('/mahasiswa', 'MahasiswaController@index');
 Route::get('/students', 'StudentsController@index');
