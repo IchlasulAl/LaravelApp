@@ -13,9 +13,11 @@
                     <h6 class="card-subtitle mb-2 text-muted">{{$student->email}}</h6>
                     <p class="card-text">{{$student->nrp}}</p>
                     <p class="card-text">{{$student->jurusan}}</p>
-                    <a href="#" class="btn btn-success">Edit</a>
-                    <a href="#" class="btn btn-danger">Delete</a>
-                    <a href="{{url('students/')}}" class="card-link">Kembali</a>
+                    <button type="submit" class="btn btn-primary">Edit</button>
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <!-- <a href="#" class="btn btn-success">Edit</a>
+                    <a href="#" class="btn btn-danger">Delete</a> -->
+                    <a href="{{url('students/')}}" class="card-link btn btn-success">Kembali</a>
                 </div>
             </div>
         </div>

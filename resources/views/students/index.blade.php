@@ -7,6 +7,14 @@
     <div class="row">
         <div class="col-6">
             <h2>Daftar Mahasiswa</h2>
+            <a href="/students/create" class="btn btn-primary my-3">Tambah Mahasiswa</a>
+
+            @if(session('status'))
+            <div class="alert alert-success">
+                {{session('status')}}
+            </div>
+            @endif
+
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
